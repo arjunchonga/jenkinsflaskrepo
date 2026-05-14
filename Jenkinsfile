@@ -21,8 +21,8 @@ pipeline{
             steps{
                 bat '''
                 echo "========executing unittests========"
-                call .venv\\Scripts\\activate
-                pytest tests/
+                .venv1\\Scripts\\pip install pytest
+                .venv1\\Scripts\\pytest tests/
                 '''
             }
         }
